@@ -58,7 +58,7 @@
             } else {
               highlightLayer.setStyle({
                 fillColor: '#ffff00',
-                fillOpacity: 1
+                fillOpacity: 0.4
               });
             }
         }
@@ -119,7 +119,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(43,131,186,1.0)',
+                fillColor: 'rgba(91,204,74,1.0)',
                 interactive: false,
             }
             }
@@ -198,14 +198,14 @@
         function style_curvasdenvelBDEX1984_2_0() {
             return {
                 pane: 'pane_curvasdenvelBDEX1984_2',
-                opacity: 1,
+                opacity: 0.8,
                 color: 'rgba(70,70,70,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_curvasdenvelBDEX1984_2');
@@ -213,7 +213,7 @@
         map.getPane('pane_curvasdenvelBDEX1984_2').style['mix-blend-mode'] = 'normal';
         var layer_curvasdenvelBDEX1984_2 = new L.geoJson(json_curvasdenvelBDEX1984_2, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_curvasdenvelBDEX1984_2',
             layerName: 'layer_curvasdenvelBDEX1984_2',
             pane: 'pane_curvasdenvelBDEX1984_2',
@@ -252,7 +252,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(5,151,191,1.0)',
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_MassasdguaBDEX1984_3');
@@ -298,9 +298,9 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 3.0,
+                weight: 2.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_CursosdguaBDEX1984_4');
